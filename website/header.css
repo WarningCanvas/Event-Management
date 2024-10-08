@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Playwright Cuba';
+    src: url('fonts/PlaywriteCU-VariableFont_wght.ttf') format('truetype'); /* Adjust the path to your file */
+    font-weight: 200;
+    font-style: normal;
+    
+}
+
+/* Use the font in your CSS */
+/* .sitename h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;    
+        color: rgb(0, 17, 255);   
+} */
+
+.sitelogo {
+    width: 310px;
+}
+body {
+    padding-bottom: 1000px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(223, 222, 222);
+    border-bottom-width: 1px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    z-index: 100;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 35px;
+    width: 45%;
+    font-size: 120%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.website-logo {
+    width: 550px;
+    border-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    margin: 15px 0 0 30px;
+}
+
+.wedding-back {
+    opacity: 1;
+    margin: 140px 0 0 0;
+}
+
+.general-body  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wedding-back-text {
+    background-color: rgb(142, 142, 225);
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+@keyframes scale {
+    from{
+        width: 100%;
+        border-radius: 0;
+    }
+    to{
+        width: 80%;
+        border-radius: 10%;
+    }
+}
+
+.dropbtn {
+    display: inline-block;  
+    position: relative;  
+    padding: 10px 20px;  /* Ensure consistent padding */
+    cursor: pointer;      
+    transition: box-shadow 0.3s ease; /* Transition only the shadow effect */
+    background-color: transparent;
+    border: none; /* Remove any border to avoid layout shifts */
+}
+
+.dropbtn::after {
+    content: '';  
+    position: absolute;
+    left: 20px;
+    bottom: -45px;
+    width: 0;  
+    height: 2px;  
+    background-color: #000;  
+    transition: width 0.3s ease;  
+}
+
+.dropbtn:hover::after {
+    width: 100%; 
+    left: 0;  
+    right: 0;
+}
+
+.dropbtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow without affecting layout */
+}
+
+.services-drop {
+    border-style: none;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 50px 20px 50px 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    top: 140px; /* Adjusted to be just below the header and underline */
+    left: 0;
+}
+
+
+.dropdown-content a {
+    color: #003049;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #fdf0d5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.dropbtn a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*css for login page*/
+
+.contact-container {
+    width: 60%;
+    height: 750px;
+    right: 60px;
+    position: absolute;
+    top: 390px ;
+    left: 110px;
+    bottom: 200px;
+ 
+}
+
+.contactfield label{
+    margin-top: 30px;
+    display: block;
+    font-size: 19px;
+    font-weight: 540;
+    margin-left: 30px;
+    font-family:  Helvetica,Arial, sans-serif;
+    color: gray;
+}
+.contactfield textarea,
+.contactfield select,
+.contactfield input  {
+    width: 85%;
+    height: 45px;
+    margin-left: 32px ;
+    border-color:rgb(217, 217, 217);
+    border-width: 1px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 17px;
+}
+
+.contactfield input::placeholder {
+    opacity: 0.5;
+}
+
+.contactPageText {
+    position:absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.contactPageText h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.contactPageText h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.signupbtn {
+    width: 100px; 
+    margin-left: 35px;
+    margin-top: 10px;
+    height: 40px;
+    border-style: none;
+} 
+
+.ContactAddressText {
+    position:absolute;
+    right: 40px;
+    top: 390px;
+    width: 25%;
+    height: 250px;
+}
+
+.ContactAddressText h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(52, 52, 52);
+
+}
+.ContactAddressText h2,
+.ContactAddressText h3 {
+margin-left: 15px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
