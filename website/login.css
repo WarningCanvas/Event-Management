@@ -1,0 +1,114 @@
+.pageUnderline {
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 85px;
+    right: 0;
+    background-color: #000;
+}
+
+.contact-container {
+    width: 60%;
+    height: 750px;
+    right: 60px;
+    position: absolute;
+    top: 390px ;
+    left: 110px;
+    bottom: 200px;
+}
+
+.contactfield label{
+    margin-top: 30px;
+    display: block;
+    font-size: 19px;
+    font-weight: 540;
+    margin-left: 30px;
+    font-family:  Helvetica,Arial, sans-serif;
+    color: gray;
+}
+.contactfield textarea,
+.contactfield select,
+.contactfield input  {
+    width: 85%;
+    height: 45px;
+    margin-left: 32px ;
+    border-color:rgb(217, 217, 217);
+    border-width: 1px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 17px;
+}
+
+.contactfield input::placeholder {
+    opacity: 0.5;
+}
+
+.contactPageText {
+    position:absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.contactPageText h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.contactPageText h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.signupbtn {
+    width: 100px; 
+    margin-left: 35px;
+    margin-top: 10px;
+    height: 40px;
+    border-style: none;
+} 
+
+.ContactAddressText {
+    position:absolute;
+    right: 40px;
+    top: 390px;
+    width: 25%;
+    height: 250px;
+}
+
+.ContactAddressText h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(52, 52, 52);
+
+}
+.ContactAddressText h2,
+.ContactAddressText h3 {
+margin-left: 15px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+   

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Playwright Cuba';
+    src: url('fonts/PlaywriteCU-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+.sitelogo {
+    width: 310px;
+}
+
+body {
+    padding-bottom: 1000px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(223, 222, 222);
+    border-bottom-width: 1px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    z-index: 100;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 35px;
+    width: 45%;
+    font-size: 120%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wedding-back {
+    opacity: 1;
+    margin: 140px 0 0 0;
+}
+
+.general-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@keyframes scale {
+    from {
+        width: 100%;
+        border-radius: 0;
+    }
+    to {
+        width: 80%;
+        border-radius: 10%;
+    }
+}
+
+.dropbtn {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    background-color: transparent;
+    border: none;
+}
+
+.dropbtn::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -45px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.dropbtn:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.dropbtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 50px 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+    top: 140px;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #003049;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #fdf0d5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropbtn a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

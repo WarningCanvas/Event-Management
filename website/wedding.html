@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WEDDING</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <div class="dropdown">
+                <div class="dropbtn">About Us</div>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/vision.html#Section1">Vision</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section2">Our Story</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section3">Join Us</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section3">Sponsorships</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn">Services</div>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/wedding_2.html">Wedding</a>
+                    <a href="http://127.0.0.1:5500/birthday.html">Birthday</a>
+                    <a href="http://127.0.0.1:5500/anniversary.html">Anniversary</a>
+                    <a href="http://127.0.0.1:5500/corporate.html">Corporate Event</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="sitelogo">
+            <a href="http://127.0.0.1:5500/Homepage.html"><img draggable="false" src="logo/White Black Minimalist Brand Logo.png"></a>
+            
+        </div>
+        <div class="right">
+
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn">Gallery</div>
+                <div class="dropdown-content">
+                    <a href="#">Photos</a>
+                    <a href="#">Awards and Recognition</a>
+                    <a href="#">Themes</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn"><a href="http://127.0.0.1:5500/login.html">Contact</a></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="service" style="background-color: #dda15e;">
+        <div class="name">
+            <h1>WEDDING</h1>
+        </div>
+
+    </div>
+    <form>
+        <div class="details">
+            <div class="wed_date">
+                <label for="date">Select a Date: </label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="people">
+                <label for="pax">Select no.of People</label>
+                <input type="number" id="pax" placeholder="MIN '10'" value="10" required>
+
+            </div>
+            <div class="budget">
+                <label for="priceRange">Select Price Range: </label>
+                <input type="range" id="priceRange" name="priceRange" min="0" max="100000" step="100" value="5000"
+                    oninput="document.getElementById('priceOutput').textContent = '£' + this.value">
+                <span id="priceOutput" style="margin-top: 10px;">£5000</span>
+
+
+                <script>
+                    // Optionally, set initial value display
+                    document.getElementById('priceOutput').textContent = document.getElementById('priceRange').value;
+                </script>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

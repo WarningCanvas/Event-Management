@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Customization</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            /* Light pastel blue background */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #b3e5fc;
+            /* Soft pastel blue */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0288d1;
+            /* Darker pastel blue */
+            margin: 10px 0 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            /* White background for form */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        input[type="range"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #81d4fa;
+            /* Soft border color */
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="date"]:hover,
+        input[type="time"]:hover,
+        input[type="number"]:hover,
+        input[type="range"]:hover,
+        select:hover {
+            border-color: #0288d1;
+            /* Change border color on hover */
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            /* Make checkboxes slightly larger */
+        }
+
+        button {
+            background-color: #b3e5fc;
+            /* Soft pastel blue */
+            color: #333;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #81d4fa;
+            /* Slightly darker on hover */
+            transform: scale(1.05);
+            /* Scale effect on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #b3e5fc;
+            color: #333;
+        }
+
+        td {
+            background-color: #f7f9fc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <div class="dropdown">
+                <div class="dropbtn">About Us</div>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/vision.html#Section1">Vision</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section2">Our Story</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section3">Join Us</a>
+                    <a href="http://127.0.0.1:5500/vision.html#Section3">Sponsorships</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn">Services</div>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/wedding_2.html">Wedding</a>
+                    <a href="http://127.0.0.1:5500/birthday.html">Birthday</a>
+                    <a href="http://127.0.0.1:5500/anniversary.html">Anniversary</a>
+                    <a href="http://127.0.0.1:5500/corporate.html">Corporate Event</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="sitelogo">
+            <a href="http://127.0.0.1:5500/Homepage.html"><img draggable="false" src="logo/White Black Minimalist Brand Logo.png"></a>
+            
+        </div>
+        <div class="right">
+
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="http://127.0.0.1:5500/Homepage.html">Home</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn">Gallery</div>
+                <div class="dropdown-content">
+                    <a href="#">Photos</a>
+                    <a href="#">Awards and Recognition</a>
+                    <a href="#">Themes</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropbtn"><a href="http://127.0.0.1:5500/login.html">Contact</a></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="form-container">
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" max="500" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget Range:</label>
+                <input type="range" id="budget" name="budget" min="1000" max="10000" step="100" value="5000">
+                <span>Budget: $<span id="budgetValue">5000</span></span>
+            </div>
+            <div class="form-group">
+                <label for="cuisine">Select Cuisine:</label>
+                <select id="cuisine" name="cuisine" required>
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="continental">Continental</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Food Preference:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="veg" name="food" value="veg">
+                    <label for="veg">Veg</label>
+
+                    <input type="checkbox" id="nonveg" name="food" value="nonveg">
+                    <label for="nonveg">Non-Veg</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="duration">Expected Duration (hours):</label>
+                <select id="duration" name="duration" required>
+                    <option value="1">1 Hour</option>
+                    <option value="2">2 Hours</option>
+                    <option value="3">3 Hours</option>
+                    <option value="4">4 Hours</option>
+                    <option value="5">5 Hours</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Table to display summary -->
+    <div class="container" id="summary-container" style="display: none;">
+        <h2>Event Summary</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <td id="summary-date"></td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td id="summary-time"></td>
+            </tr>
+            <tr>
+                <th>Number of People</th>
+                <td id="summary-people"></td>
+            </tr>
+            <tr>
+                <th>Budget</th>
+                <td id="summary-budget"></td>
+            </tr>
+            <tr>
+                <th>Cuisine</th>
+                <td id="summary-cuisine"></td>
+            </tr>
+            <tr>
+                <th>Food Preference</th>
+                <td id="summary-food"></td>
+            </tr>
+            <tr>
+                <th>Duration</th>
+                <td id="summary-duration"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Update budget value display
+        const budgetSlider = document.getElementById('budget');
+        const budgetValue = document.getElementById('budgetValue');
+
+        budgetSlider.oninput = function () {
+            budgetValue.textContent = this.value;
+        }
+
+        // Form submission and summary display
+        const form = document.getElementById('eventForm');
+        const summaryContainer = document.getElementById('summary-container');
+        const formContainer = document.getElementById('form-container');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get form values
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const people = document.getElementById('people').value;
+            const budget = budgetSlider.value;
+            const cuisine = document.getElementById('cuisine').value;
+
+            // Get food preference values
+            let food = [];
+            if (document.getElementById('veg').checked) {
+                food.push('Veg');
+            }
+            if (document.getElementById('nonveg').checked) {
+                food.push('Non-Veg');
+            }
+
+            const duration = document.getElementById('duration').value;
+
+            // Update summary table with values
+            document.getElementById('summary-date').textContent = date;
+            document.getElementById('summary-time').textContent = time;
+            document.getElementById('summary-people').textContent = people;
+            document.getElementById('summary-budget').textContent = `$${budget}`;
+            document.getElementById('summary-cuisine').textContent = cuisine.charAt(0).toUpperCase() + cuisine.slice(1);
+            document.getElementById('summary-food').textContent = food.join(', ');
+            document.getElementById('summary-duration').textContent = duration + ' Hour(s)';
+
+            // Hide form and show summary
+            formContainer.style.display = 'none';
+            summaryContainer.style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>
