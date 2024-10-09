@@ -1,1 +1,0 @@
-$(".wedding-back-text").innerHTML("Welcome to Occasio");
