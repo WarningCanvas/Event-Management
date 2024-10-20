@@ -18,7 +18,7 @@ body {
     flex-direction: row;
     height: 140px;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
     top: 0;
     left: 0;
@@ -120,7 +120,7 @@ header img {
     opacity: 0;
     transition: opacity 0.25s ease;
     pointer-events: none;
-    top: 140px;
+    top: 145px;
     left: 0;
 }
 
@@ -149,4 +149,82 @@ header img {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+/* Ensure the body takes full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main wrapper to hold content and push footer to bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content should take up remaining space */
+main {
+    flex: 1;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0e4c92;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top:100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-about, .footer-contact, .footer-follow {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #ddd;
+}
+
+.footer-follow .social-button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0e4c92;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.footer-follow .social-button:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .footer-about, .footer-contact, .footer-follow {
+        margin: 20px 0;
+    }
 }

@@ -124,3 +124,45 @@ body {
     opacity: 1;
 }
 
+.text-box.show, .image-box.show {
+    opacity: 1;
+    transform: translateY(0); /* Move the elements up to their original position */
+}
+
+.home-slide-first {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.text-box{ 
+    padding: 20px;
+    margin: 40vh auto 0; /* Start appearing after scrolling down */
+    max-width: 600px; /* Limit the width of the container */
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px); /* Initial downward position */
+    transition: all 0.5s ease-out; /* Smooth animation */
+    margin-top: 50px;
+    height: 45vh;
+}
+
+.text-box.show {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to its original position */
+}
+
+.home-slide-first p {
+    line-height: 1.6; /* Improve readability */
+    font-size: 20px;
+}
+
+.home-slide-first {
+    background-color: lightgray;
+    position:relative;
+
+}
+
+
+
+
+

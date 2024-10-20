@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* To create enough scroll space */
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    max-width: 800px;
+    margin: 100vh auto 0; /* The content will start appearing after you scroll down */
+    text-align: center;
+}
+
+.text-box, .image-box {
+    opacity: 0;
+    transform: translateY(50px); /* Initially position the elements 50px below */
+    transition: all 0.5s ease-out; /* Smooth transition for both transform and opacity */
+}
+
+.text-box.show, .image-box.show {
+    opacity: 1;
+    transform: translateY(0); /* Move the elements up to their original position */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="content">
+        <div class="text-box">
+            <h1>Slide Up Text</h1>
+            <p>This text will slide up as you scroll.</p>
+        </div>
+        <div class="image-box">
+            <img src="your-image.jpg" alt="Image">
+        </div>
+    </section>
+
+    <script >
+// Function to check if element is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to add the 'show' class to elements in view
+function checkVisibility() {
+    const textBox = document.querySelector('.text-box');
+    const imageBox = document.querySelector('.image-box');
+    
+    if (isElementInViewport(textBox)) {
+        textBox.classList.add('show');
+    }
+    if (isElementInViewport(imageBox)) {
+        imageBox.classList.add('show');
+    }
+}
+
+// Event listener for scroll event
+window.addEventListener('scroll', checkVisibility);
+
+    </script>
+</body>
+</html>
